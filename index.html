@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitesquare</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header-grid {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .search-bar {
+            display: flex;
+        }
+        
+        .search-bar input {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-right: none;
+        }
+        
+        .search-bar button {
+            padding: 8px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .main-content {
+            margin: 30px 0;
+        }
+        
+        .hero-section {
+            background-color: #e9e9e9;
+            padding: 40px 0;
+            margin-bottom: 30px;
+        }
+        
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        
+        .hero-title h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .hero-title p {
+            color: #666;
+        }
+        
+        .hero-nav ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .hero-nav li {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .content-card {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .content-card h2 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .content-card p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+        
+        .read-more {
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .ceo-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            font-style: italic;
+        }
+        
+        .ceo-name {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #555;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #555;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-grid">
+            <div class="logo">whitesquare</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>GO</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PARTNERS</a></li>
+                    <li><a href="#">CUSTOMERS</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">CARTERS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container main-content">
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-title">
+                    <h1>FUSCE VITAE NIBH QUIS DIAM FERMENTUM</h1>
+                    <p>Eltam adipiscing ultricies commodo.</p>
+                </div>
+                <div class="hero-nav">
+                    <ul>
+                        <li>1 LOREM IPSUM DOLOP</li>
+                        <li>2 ULTRICIES PELLENTESQUE</li>
+                        <li>3 ALIQUAM IPSUM</li>
+                        <li>4 NULLAM SED MAURIS UT</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="content-grid">
+            <div class="content-card">
+                <h2>ABOUT WHITESQUARE</h2>
+                <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+            <div class="content-card">
+                <h2>A WORD FROM OUR CEO</h2>
+                <div class="ceo-section">
+                    <p>"In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac."</p>
+                    <div class="ceo-name">Yane Naumoski, CEO</div>
+                </div>
+            </div>
+            <div class="content-card">
+                <h2>SERVICES</h2>
+                <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+            <div class="content-card">
+                <h2>OUR TEAMS</h2>
+                <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+            <div class="content-card">
+                <h2>21/17/365 SUPPORT</h2>
+                <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+            <div class="content-card">
+                <h2>OUR CLIENTS</h2>
+                <h3>LOREM IPSUM</h3>
+                <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>TWITTER FEED</h3>
+                    <p>23 set</p>
+                    <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>SITEMAP</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>SOCIAL NETWORKS</h3>
+                    <div class="social-links">
+                        <a href="#">T</a>
+                        <a href="#">F</a>
+                        <a href="#">G</a>
+                        <a href="#">I</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <div class="logo">whitesquare</div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                Copyright © 2023 Whitesquare. A riddled creation
+            </div>
+        </div>
+    </footer>
+    <script src="jin.js"></script>
+</body>
+</html>
